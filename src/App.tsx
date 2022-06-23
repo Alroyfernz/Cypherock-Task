@@ -8,7 +8,7 @@ import OptionBar from './components/Optionbar/OptionBar';
 import CoinContainer from './components/Coin/CoinContainer';
 import { coinData } from "./Data/data"
 import { Coin } from './Data/interfaces';
-
+import { ReactComponent as ToggleIcon } from "./assets/ToggleIcon.svg"
 function App() {
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
               <span className="SynText">Synchronized</span>
             </div>
             <div className="LockDiv">
-              <VscLock className="LockIcon" />
+              <ToggleIcon className="LockIcon" />
             </div>
             <div className="LockDiv">
               <VscLock className="LockIcon" />
@@ -39,12 +39,13 @@ function App() {
             </button>
           </div>
           <OptionBar />
-          {
-            coinData.map(({ CoinIcon, CoinName, CoinValue, CoinAmt }: Coin) => {
-              return (<CoinContainer CoinIcon={CoinIcon} CoinName={CoinName} CoinValue={CoinValue} CoinAmt={CoinAmt} />)
-            })
-          }
-
+          <div className="CoinItemsWrapper">
+            {
+              coinData.map(({ CoinIcon, CoinName, CoinValue, CoinAmt }: Coin) => {
+                return (<CoinContainer CoinIcon={CoinIcon} CoinName={CoinName} CoinValue={CoinValue} CoinAmt={CoinAmt} />)
+              })
+            }
+          </div>
         </div>
       </div>
 

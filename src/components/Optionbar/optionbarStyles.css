@@ -14,10 +14,11 @@
     width: 94%;
 }
 .LeftContainer,.RightContainer{
-    width: 50%;
+    width: 65%;
   
 }
 .RightContainer{
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content:space-between;

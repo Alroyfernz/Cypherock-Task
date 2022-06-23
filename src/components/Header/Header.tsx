@@ -15,8 +15,8 @@ const Header: React.FC = () => {
 
             <div className="RightIconContainer">
                 <AiOutlineMinus className="RightIcons" />
-                <RiCheckboxBlankLine className="RightIcons" />
-                <IoMdClose className="RightIcons" style={{ fontSize: 22 }} />
+                <RiCheckboxBlankLine className="RightMidIcons" />
+                <IoMdClose className="RightIcons" />
             </div>
         </div>
     )
