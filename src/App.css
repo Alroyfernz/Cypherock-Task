@@ -2,3 +2,7 @@
   background-color: #212427;
   min-height:100vh
 }
+.AppWrapper{
+  display: flex;
+  width: 100%;
+}

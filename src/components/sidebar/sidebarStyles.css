@@ -1,0 +1,63 @@
+.SidebarContainer{
+    width: 20%;
+    min-height:90vh;
+    background-color: #1E2328;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    
+}
+.chakra-accordion__item{
+    border:unset;
+    margin: 15px 0;
+    color:#fff;
+}
+.chakra-accordion__item>h2{
+    color:#fff;
+   
+}
+
+.chakra-accordion__button{
+    font-size: 17px;
+}
+.chakra-accordion__button:hover{
+background-color:transparent !important;
+}
+.SidebarWrapper{
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+   min-height: 100%;
+    align-items: center;
+    justify-content:space-around
+}
+
+.SupportBtn{
+    background-color: #785B3C;
+    padding:6px 6px;
+    width: 50%;
+    color:#F5CEA3;
+    border-radius: 3px;
+}
+.WalletBox{
+    margin: 0 0 0 20px;
+
+}
+.WalletTitle{
+font-weight: 500;
+color:#C78D4E;
+font-size: 17px;
+}
+
+.AddWalletBtn{
+    border:1px dotted #616161;
+    color:#616161;
+padding:2px 5px;
+    display: flex;
+    font-size: 13px;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
