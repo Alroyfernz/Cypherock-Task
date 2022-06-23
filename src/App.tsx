@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import SideBar from './components/sidebar/SideBar';
 import { MdDone } from "react-icons/md"
 import { VscLock } from "react-icons/vsc"
+import OptionBar from './components/Optionbar/OptionBar';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,7 @@ function App() {
               + Add Coin
             </button>
           </div>
+          <OptionBar />
         </div>
       </div>
 

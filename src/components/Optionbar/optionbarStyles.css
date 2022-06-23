@@ -1,0 +1,37 @@
+.OptionBarContainer{
+    width: 100%;margin-top: 3%;
+    border:1px solid #adabaa2d;
+    padding: 17px 0px;
+   color:#ADABAA;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.OptionBarWrapper{
+    display: flex;
+    width: 94%;
+}
+.LeftContainer,.RightContainer{
+    width: 50%;
+  
+}
+.RightContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.YearDiv,.SortDiv{
+display: flex;
+align-items: center;
+width: 40%;
+justify-content: flex-start;
+
+}
+.FilterTerm{
+    margin: 0 10px;
+}
+.BottomIcon{
+    color:#E09D54;
+}
