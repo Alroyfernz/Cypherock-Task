@@ -5,6 +5,10 @@ import SideBar from './components/sidebar/SideBar';
 import { MdDone } from "react-icons/md"
 import { VscLock } from "react-icons/vsc"
 import OptionBar from './components/Optionbar/OptionBar';
+import CoinContainer from './components/Coin/CoinContainer';
+import { coinData } from "./Data/data"
+import { Coin } from './Data/interfaces';
+
 function App() {
   return (
     <div className="App">
@@ -35,6 +39,12 @@ function App() {
             </button>
           </div>
           <OptionBar />
+          {
+            coinData.map(({ CoinIcon, CoinName, CoinValue, CoinAmt }: Coin) => {
+              return (<CoinContainer CoinIcon={CoinIcon} CoinName={CoinName} CoinValue={CoinValue} CoinAmt={CoinAmt} />)
+            })
+          }
+
         </div>
       </div>
 

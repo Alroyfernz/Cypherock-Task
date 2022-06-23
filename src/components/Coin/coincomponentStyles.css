@@ -1,0 +1,70 @@
+.CoinContainer{
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    background-color:
+    rgba(64, 72, 84, 0.332);
+    color:rgba(173, 171, 170, 1);
+}
+.CoinWrapper{
+    width: 92%;
+display: flex;
+align-items: center;
+justify-content:space-between;
+
+}
+.CoinMainDiv{
+    display: flex;
+    min-width: 20%;
+    align-items: center;
+    
+   
+    
+}
+.CoinName{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.CoinCircle{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #403D3A;
+}
+.CoinAmt, .Coin{
+    min-width: 10%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.TransactionDiv{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Receive,.Send{
+  
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.PointerIcons{
+    margin-right: 8px;
+}
+.Receive{
+    color:#8484F1;
+    padding-right: 30px;
+    border-right:1px solid #8484F1;
+}
+.Send{
+    color:#CAA276
+}

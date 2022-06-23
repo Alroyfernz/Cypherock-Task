@@ -25,6 +25,7 @@
 .YearDiv,.SortDiv{
 display: flex;
 align-items: center;
+cursor: pointer;
 width: 40%;
 justify-content: flex-start;
 

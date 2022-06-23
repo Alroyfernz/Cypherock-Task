@@ -5,7 +5,7 @@ import {
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon,
+
     Box,
 } from '@chakra-ui/react'
 const SideBar: React.FC = () => {
@@ -90,7 +90,7 @@ const SideBar: React.FC = () => {
                 </Accordion>
 
                 <button className="SupportBtn">
-                    Supports
+                    Support
                 </button>
             </div>
         </div>
