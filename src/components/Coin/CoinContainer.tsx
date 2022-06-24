@@ -5,11 +5,8 @@ import { CgClose } from "react-icons/cg"
 import { Coin } from '../../Data/interfaces'
 import {
     Modal,
-
     ModalContent,
-
     ModalBody,
-
     useDisclosure,
 } from '@chakra-ui/react'
 import ModalNav from '../ModalNav/ModalNav'
