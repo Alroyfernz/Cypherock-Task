@@ -41,8 +41,8 @@ function App() {
           <OptionBar />
           <div className="CoinItemsWrapper">
             {
-              coinData.map(({ CoinIcon, CoinName, CoinValue, CoinAmt }: Coin) => {
-                return (<CoinContainer CoinIcon={CoinIcon} CoinName={CoinName} CoinValue={CoinValue} CoinAmt={CoinAmt} />)
+              coinData.map(({ CoinIcon, CoinName, CoinValue, CoinAmt }: Coin, idx) => {
+                return (<CoinContainer key={idx} CoinIcon={CoinIcon} CoinName={CoinName} CoinValue={CoinValue} CoinAmt={CoinAmt} />)
               })
             }
           </div>

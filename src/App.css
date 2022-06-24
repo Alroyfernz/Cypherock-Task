@@ -7,9 +7,13 @@
 }
 .CoinItemsWrapper{
   width: 100%;
+  margin-top: 2%;
   max-height: 55vh;
   padding:0 20px 0 0;
   overflow-y: scroll;
+}
+.CoinItemsWrapper>.CoinContainer:nth-child(1){
+  margin-top: 0;
 }
 
 .CoinItemsWrapper::-webkit-scrollbar {

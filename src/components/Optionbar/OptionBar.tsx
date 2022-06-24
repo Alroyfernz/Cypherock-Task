@@ -11,12 +11,13 @@ import {
     Button,
 } from '@chakra-ui/react'
 import { BsChevronDown } from "react-icons/bs"
+import { coinData } from '../../Data/data'
 const OptionBar: React.FC = () => {
     return (
         <div className="OptionBarContainer">
             <div className="OptionBarWrapper">
                 <div className="LeftContainer">
-                    Total Coin-3
+                    {coinData.length > 1 ? `Total Coins - ${coinData.length}` : `1 Total Coin - ${coinData.length}`}
                 </div>
                 <div className="RightContainer">
                     <div className="YearDiv">
