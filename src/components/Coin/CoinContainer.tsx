@@ -39,18 +39,28 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                                 Receive
                             </h1>
                             <ModalNav section={section} setSection={setSection} />
+                            <div style={{ minHeight: '50vh', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                                {section == 'Device' && <>
+                                    <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
 
-                            {section == 'Device' && <>
-                                <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
+                                </>}
+                                {section == 'Verification' && <>
+                                    <CodeComp />
+                                    <Instruction InstructionTitle="Verify address on device" InstructionArray={SecondSectionInstructionArray} />
 
-                            </>}
-                            {section == 'Verification' && <>
-                                <CodeComp />
-                                <Instruction InstructionTitle="Verify address on device" InstructionArray={SecondSectionInstructionArray} />
+                                </>}
+                                {section == 'Receive' &&
+                                    <>
+                                        <CoinAddress />
+                                        <span className="VerifyText">
+                                            ! Address Verfied
+                                        </span>
 
-                            </>}
-                            {section == 'Receive' &&
-                                <CoinAddress />}
+                                        <button className="VerifyBtn">
+                                            Re-verify
+                                        </button>
+                                    </>}
+                            </div>
                         </div>
 
                     </ModalBody>

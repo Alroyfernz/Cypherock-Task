@@ -82,9 +82,27 @@ justify-content:space-between;
 
  
 }
+.VerifyText{
+color:rgba(72, 72, 246, 1);
+font-size: 16px;
+font-weight: 500;
+margin-top: 5%;
+align-self: flex-start;
+}
+.VerifyBtn{
+    border:1px solid rgba(72, 72, 246, 1);
+    padding:10px 0px;
+    width: 28%;
+    color:rgba(72, 72, 246, 1);
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
 .css-hxtskf{
     border: unset;
    max-width: 65% !important;
+   min-height: 80vh;
 margin: auto !important;
     padding:4rem !important;
    
