@@ -15,6 +15,7 @@ import {
     useDisclosure,
 } from '@chakra-ui/react'
 import ModalNav from '../ModalNav/ModalNav'
+import Instruction from '../InstructionComponenet/Instruction'
 
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,13 +26,15 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
 
                 <ModalContent>
 
-                    <CgClose className="ModalCloseIcon" />
+
                     <ModalBody>
                         <div className="ModalWrapper">
+                            <CgClose className="ModalCloseIcon" />
                             <h1 className="ModalText">
                                 Receive
                             </h1>
                             <ModalNav />
+                            <Instruction />
                         </div>
 
                     </ModalBody>

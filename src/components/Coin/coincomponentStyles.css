@@ -76,14 +76,24 @@ justify-content:space-between;
   background-color:transparent;
   background-color:
   rgba(19, 22, 26, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ 
 }
 .css-hxtskf{
     border: unset;
-    padding:1rem;
+   max-width: 65% !important;
+
+    padding:4rem !important;
+   
     background-color:
     rgba(19, 22, 26, 1) !important;
 }
 .ModalWrapper{
+    width: 80%;
+    position:relative;
     display: flex;
     align-items: center;
     background-color:transparent;
@@ -91,15 +101,16 @@ justify-content:space-between;
     justify-content: center;
 }
 .ModalText{
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 500;
     color:rgba(255, 255, 255, 1);
 }
 .ModalCloseIcon{
     color:rgba(255, 255, 255, 1);
     position:absolute;
-    right:10%;
-    font-size: 20px;
+    right:0%;
+    font-size: 24px;
 
 
-    top:20px;
+    top:0%;
 }
