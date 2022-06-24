@@ -3,10 +3,7 @@ import { HiOutlineArrowRight } from "react-icons/hi"
 import { MdDone } from "react-icons/md"
 import "./instructionStyles.css"
 
-interface InstructionComponenet {
-    title: string;
-    isDone?: boolean;
-}
+import { InstructionComponenet } from "../../Data/interfaces"
 
 interface Props {
     InstructionTitle: string;

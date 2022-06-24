@@ -4,3 +4,8 @@ export interface Coin {
     CoinAmt: string;
     CoinValue: string
 }
+
+export interface InstructionComponenet {
+    title: string;
+    isDone?: boolean;
+}

@@ -1,13 +1,13 @@
 .CodeContainer{
     width: 100%;
-    padding:26px;
+    padding:28px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5%;
     background-color:rgba(54, 58, 62, 1);
-    border:1px dotted rgba(255, 255, 255, 0.567);
-    border-radius:6px;
+    border:1.5px dotted rgba(255, 255, 255, 0.567);
+    border-radius:9px;
 }
 
 

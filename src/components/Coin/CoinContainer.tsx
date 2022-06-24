@@ -17,10 +17,7 @@ import {
 import ModalNav from '../ModalNav/ModalNav'
 import Instruction from '../InstructionComponenet/Instruction'
 import CodeComp from '../CodeComponent/CodeComp'
-const InstructionArray = [{
-    title: "Select the Wallet On device", isDone: true,
-
-}, { title: "Select the Coin on device", isDone: true }, { title: "Tap 1 card of any 4 Cards", isDone: true }]
+import { FirstSectionInstructionArray } from '../../Data/data'
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -40,7 +37,7 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                             <ModalNav />
                             <CodeComp />
 
-                            <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={InstructionArray} />
+                            <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
                         </div>
 
                     </ModalBody>
