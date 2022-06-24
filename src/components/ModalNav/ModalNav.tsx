@@ -1,5 +1,5 @@
 import React from 'react'
-import "./modalnavStyles.css"
+import "./modalNavStyles.css"
 import { MdDone } from "react-icons/md"
 import { processMap } from "../../Data/data"
 interface Props {

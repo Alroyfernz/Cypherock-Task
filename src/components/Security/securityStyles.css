@@ -1,0 +1,45 @@
+.TopRightSection{
+    width: 27%;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .SynDiv{
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  
+  }
+  .SynCircle{
+  border:1px solid rgba(72, 72, 246, 1);
+  border-radius:50%;
+  padding: 3px;
+  }
+  .SynTick{
+    color:rgba(72, 72, 246, 1)
+  }
+  .SynText{
+    color:
+    rgba(245, 206, 163, 1);
+  margin-left: 6px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .LockDiv{
+    width: 12%;
+    background-color:
+    rgba(64, 72, 84, 0.332);
+    border-radius:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+  }
+  .LockIcon{
+  color:#F5CEA3;
+  font-size: 20px;
+  }
+  
+  

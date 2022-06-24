@@ -1,0 +1,23 @@
+.WalletTitleContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .WalletMainTitle{
+    color:#C78D4E;
+    font-size: 22px;
+    font-weight: 500;
+  
+  }
+  .AddCoinBtn{
+    background-color:
+      rgba(64, 72, 84, 0.332);
+    padding:5px 0;
+    width: 12%;
+    border-radius:4px;
+    color:#BEB4A8;
+    font-size: 15px;
+  }

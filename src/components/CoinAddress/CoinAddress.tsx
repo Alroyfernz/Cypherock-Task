@@ -1,5 +1,5 @@
 import React from 'react'
-import "./coinaddressStyles.css"
+import "./coinAddressStyles.css"
 const CoinAddress: React.FC = () => {
     return (
         <div className="CoinAddressContainer">

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./codecompStyles.css"
+import "./codeCompStyles.css"
 const CodeComp: React.FC = () => {
     return (
         <div className="CodeContainer">

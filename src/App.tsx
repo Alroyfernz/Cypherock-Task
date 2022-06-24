@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import SideBar from './components/sidebar/SideBar';
-import { MdDone } from "react-icons/md"
-import { VscLock } from "react-icons/vsc"
+
 import OptionBar from './components/Optionbar/OptionBar';
 import CoinContainer from './components/Coin/CoinContainer';
 import { coinData } from "./Data/data"
 import { Coin } from './Data/interfaces';
 import { ReactComponent as Logo } from "./assets/logo.svg"
-import { ReactComponent as ToggleIcon } from "./assets/ToggleIcon.svg"
 import { Progress } from '@chakra-ui/react';
+import WalletTitle from './components/WalletTitle/WalletTitle';
+import Security from './components/Security/Security';
 function App() {
   const [loading, setLoading] = useState(true)
   const [progress, setProgress] = useState(0)
@@ -18,16 +18,14 @@ function App() {
 
     const interval = setInterval(() => {
 
-      setProgress((p) => p + 1)
-      console.log(progress);
+      setProgress((prev) => prev + 1)
 
-      console.log('beuhh');
 
     }, 100)
     setTimeout(() => {
       setLoading(false)
       clearInterval(interval)
-    }, 900)
+    }, 1000)
 
 
 
@@ -43,27 +41,9 @@ function App() {
             <SideBar />
             <div className="AppRightPart">
 
-              <div className="TopRightSection">
-                <div className="SynDiv">
-                  <span className="SynCircle">
-                    <MdDone className="SynTick" />
-                  </span>
-                  <span className="SynText">Synchronized</span>
-                </div>
-                <div className="LockDiv">
-                  <ToggleIcon className="LockIcon" />
-                </div>
-                <div className="LockDiv">
-                  <VscLock className="LockIcon" />
-                </div>
-              </div>
+              <Security />
 
-              <div className="WalletTitleContainer">
-                <h1 className="WalletMainTitle">Wallet 1</h1>
-                <button className="AddCoinBtn">
-                  + Add Coin
-                </button>
-              </div>
+              <WalletTitle />
               <OptionBar />
               <div className="CoinItemsWrapper">
                 {

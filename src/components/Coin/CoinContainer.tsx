@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./coincomponentStyles.css"
+import "./coinComponentStyles.css"
 import { CgArrowTopRight, CgArrowBottomLeft } from "react-icons/cg"
 import { CgClose } from "react-icons/cg"
 import { Coin } from '../../Data/interfaces'
@@ -13,8 +13,8 @@ import {
     useDisclosure,
 } from '@chakra-ui/react'
 import ModalNav from '../ModalNav/ModalNav'
-import Instruction from '../InstructionComponenet/Instruction'
-import CodeComp from '../CodeComponent/CodeComp'
+import Instruction from '../Instruction/Instruction'
+import CodeComp from '../Code/CodeComp'
 import { FirstSectionInstructionArray, SecondSectionInstructionArray } from '../../Data/data'
 import CoinAddress from '../CoinAddress/CoinAddress'
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
@@ -29,10 +29,10 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
 
                 <ModalContent>
 
-
+                    <CgClose className="ModalCloseIcon" onClick={onClose} />
                     <ModalBody>
                         <div className="ModalWrapper">
-                            <CgClose className="ModalCloseIcon" onClick={onClose} />
+
                             <h1 className="ModalText">
                                 Receive
                             </h1>
