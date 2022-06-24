@@ -25,7 +25,8 @@
 
 /* Handle */
 .CoinItemsWrapper::-webkit-scrollbar-thumb {
-  background:   rgba(64, 72, 84, 0.656);;
+  background:   rgba(64, 72, 84, 0.656);
+  
   
 }
 

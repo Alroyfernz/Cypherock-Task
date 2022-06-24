@@ -17,6 +17,33 @@
     width: 65%;
   
 }
+.LeftContainer{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start
+}
+.css-1d0ox2v{
+background: unset !important;
+font-size: unset !important;
+
+font-weight: unset !important;
+padding: 0 !important;
+}
+.css-13c7rae{
+padding:20px 40px;
+
+}
+.css-13c7rae:focus{
+    color:#dbd1c5;
+    background:unset !important;
+}
+.css-1ozmk1d{
+    background-color:
+    rgba(64, 72, 84, 1) !important;
+    border:1px solid rgba(173, 171, 170, 1) !important; 
+    color:rgba(173, 171, 170, 1) !important;
+
+}
 .RightContainer{
     width: 35%;
     display: flex;
