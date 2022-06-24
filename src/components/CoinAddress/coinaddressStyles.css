@@ -1,0 +1,48 @@
+.CoinAddressContainer {
+    width: 100%;
+    margin-top: 4%;
+}
+.ContainerTitle{
+    color:#C0C1C5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.AddressContainer{
+    background-color:rgba(255, 255, 255, 0.085);
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 3%;
+    border-radius:12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.AddressWrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CoinAddressText{
+    color:#E19A4C;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.CopyBtn{
+    height: 70%;
+    width: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 500px;
+font-size: 14px;
+
+background-color:rgba(147, 140, 140, 0.24);
+color:#E0B36A;
+padding:10px 0;
+margin-right: 5%;
+border-radius:8px;
+}

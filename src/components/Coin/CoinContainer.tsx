@@ -18,6 +18,7 @@ import ModalNav from '../ModalNav/ModalNav'
 import Instruction from '../InstructionComponenet/Instruction'
 import CodeComp from '../CodeComponent/CodeComp'
 import { FirstSectionInstructionArray } from '../../Data/data'
+import CoinAddress from '../CoinAddress/CoinAddress'
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -35,9 +36,9 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                                 Receive
                             </h1>
                             <ModalNav />
-                            <CodeComp />
-
-                            <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
+                            {/* <CodeComp /> */}
+                            <CoinAddress />
+                            {/* <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} /> */}
                         </div>
 
                     </ModalBody>
