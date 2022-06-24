@@ -8,8 +8,9 @@ interface Props {
 
 }
 const ModalNav: React.FC<Props> = ({ section, setSection }) => {
-    console.log(processMap.get('Receive'));
 
+
+    //To check if a Receive process is complete or not
     const CheckDone = (inputSection: any): boolean | null => {
         var idx = Number(processMap.get(section));
         console.log(idx, 'which idx ');
@@ -32,20 +33,23 @@ const ModalNav: React.FC<Props> = ({ section, setSection }) => {
     }
 
 
-
+    //Toggle to other processes
     const changeSection = (section: string) => {
         setSection(section);
     }
+    //compares input process with the one stored in state
     const presentProcess = (process: string) => {
         return section === process;
     }
+    //Returns equivalent classnames for selected or completed process
     const CurrentStyleComp = (section: string): string => {
         return presentProcess(section) ? "InnerCircle InnerSelected" : CheckDone(section) ? "InnerCircle processDone" : "InnerCircle"
     }
+    //Returns equivalent classnames for selected or completed process
     const CurrentStyleComp2 = (section: string): string => {
         return presentProcess(section) ? "BoxTitle TextSelected" : CheckDone(section) ? "BoxTitle processDoneText" : 'BoxTitle'
     }
-
+    //Returns equivalent classnames for selected or completed process
     const CurrentStyleComp3 = (section: string): any | number => {
         return CheckDone(section) ? <MdDone className="ProcessIcon" /> : processMap.get(section)
     }

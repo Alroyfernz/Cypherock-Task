@@ -5,13 +5,11 @@ import { CgClose } from "react-icons/cg"
 import { Coin } from '../../Data/interfaces'
 import {
     Modal,
-    ModalOverlay,
+
     ModalContent,
-    ModalHeader,
-    ModalFooter,
+
     ModalBody,
-    ModalCloseButton,
-    Button,
+
     useDisclosure,
 } from '@chakra-ui/react'
 import ModalNav from '../ModalNav/ModalNav'
@@ -20,13 +18,13 @@ import CodeComp from '../CodeComponent/CodeComp'
 import { FirstSectionInstructionArray, SecondSectionInstructionArray } from '../../Data/data'
 import CoinAddress from '../CoinAddress/CoinAddress'
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
-    const [section, setSection] = useState<string>("Device")
-    const [doneProcess, setDoneProcess] = useState<string | null>(null)
+    const [section, setSection] = useState<string>("Device") //To toggle section in receive modal
 
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
         <>
+            {/* RECEVE MODAL */}
             <Modal isOpen={isOpen} onClose={onClose}>
 
                 <ModalContent>
@@ -40,16 +38,16 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                             </h1>
                             <ModalNav section={section} setSection={setSection} />
                             <div className="SectionContainer">
-                                {section == 'Device' && <>
+                                {section === 'Device' && <>
                                     <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
 
                                 </>}
-                                {section == 'Verification' && <>
+                                {section === 'Verification' && <>
                                     <CodeComp />
                                     <Instruction InstructionTitle="Verify address on device" InstructionArray={SecondSectionInstructionArray} />
 
                                 </>}
-                                {section == 'Receive' &&
+                                {section === 'Receive' &&
                                     <>
                                         <CoinAddress />
                                         <span className="VerifyText">
