@@ -68,3 +68,38 @@ justify-content:space-between;
 .Send{
     color:#CAA276
 }
+
+
+/* MODAL STYLES. */
+.css-qlig70{
+    border-radius: 6px;
+  background-color:transparent;
+  background-color:
+  rgba(19, 22, 26, 1);
+}
+.css-hxtskf{
+    border: unset;
+    padding:1rem;
+    background-color:
+    rgba(19, 22, 26, 1) !important;
+}
+.ModalWrapper{
+    display: flex;
+    align-items: center;
+    background-color:transparent;
+    flex-direction: column;
+    justify-content: center;
+}
+.ModalText{
+    font-size: 24px;
+    color:rgba(255, 255, 255, 1);
+}
+.ModalCloseIcon{
+    color:rgba(255, 255, 255, 1);
+    position:absolute;
+    right:10%;
+    font-size: 20px;
+
+
+    top:20px;
+}

@@ -1,0 +1,68 @@
+.NavContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5%;
+    position: relative;
+}
+
+.Box{
+display: flex;
+align-items:center;
+justify-content: center;
+cursor: pointer;
+
+}
+.BoxWrapper{
+    display: flex;
+align-items:center;
+justify-content: center;
+flex-direction:column;
+}
+.Box:nth-child(1)::after,.Box:nth-child(2)::after{
+    content: "";
+    background-color: #707070;
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    top: 20px;
+    margin-left: 44%;
+    display: block;
+}
+.InnerSelected{
+    color:rgba(19, 22, 25, 1) !important;
+}
+.CircleSelected{
+    border:1px solid rgba(225, 154, 76, 1);
+    background-color:transparent;
+    display: flex;
+    align-items:center;
+    border-radius:50%;
+    font-weight: 500;
+    justify-content: center;
+    padding: 4px;
+    color:rgba(19, 22, 25, 1) !important;
+}
+
+.InnerCircle{
+    width: 25px;
+    height: 25px;
+    background-color:rgba(225, 154, 76, 1);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   color:rgba(162, 161, 161, 1);
+   border-radius:50%;
+
+}
+.BoxTitle{
+    font-size: 16px;
+    margin-top: 2%;
+    color:rgba(162, 161, 161, 1)
+
+}
+.TextSelected{
+    font-weight: 500;
+    color:rgba(199, 141, 78, 1);
+}
