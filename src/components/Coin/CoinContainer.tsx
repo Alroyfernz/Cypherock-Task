@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./coincomponentStyles.css"
 import { CgArrowTopRight, CgArrowBottomLeft } from "react-icons/cg"
 import { CgClose } from "react-icons/cg"
@@ -17,9 +17,12 @@ import {
 import ModalNav from '../ModalNav/ModalNav'
 import Instruction from '../InstructionComponenet/Instruction'
 import CodeComp from '../CodeComponent/CodeComp'
-import { FirstSectionInstructionArray } from '../../Data/data'
+import { FirstSectionInstructionArray, SecondSectionInstructionArray } from '../../Data/data'
 import CoinAddress from '../CoinAddress/CoinAddress'
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
+    const [section, setSection] = useState<string>("Device")
+    const [doneProcess, setDoneProcess] = useState<string | null>(null)
+
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -35,10 +38,19 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                             <h1 className="ModalText">
                                 Receive
                             </h1>
-                            <ModalNav />
-                            {/* <CodeComp /> */}
-                            <CoinAddress />
-                            {/* <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} /> */}
+                            <ModalNav section={section} setSection={setSection} />
+
+                            {section == 'Device' && <>
+                                <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
+
+                            </>}
+                            {section == 'Verification' && <>
+                                <CodeComp />
+                                <Instruction InstructionTitle="Verify address on device" InstructionArray={SecondSectionInstructionArray} />
+
+                            </>}
+                            {section == 'Receive' &&
+                                <CoinAddress />}
                         </div>
 
                     </ModalBody>

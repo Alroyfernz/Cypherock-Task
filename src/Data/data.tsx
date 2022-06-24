@@ -46,3 +46,10 @@ export const SecondSectionInstructionArray: Array<InstructionComponenet> = [{
     title: "Select the Wallet On device", isDone: false,
 
 }]
+
+
+export const processMap = new Map(Object.entries({
+    "Device": 1,
+    "Verification": 2,
+    "Receive": 3
+}))

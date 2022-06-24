@@ -28,7 +28,7 @@ border:unset !important;
     color:#694D2E;
 }
 .processDoneText{
-    color:#E0B36A;
+    color:#E0B36A !important;
 }
 .Box:nth-child(1)::after,.Box:nth-child(2)::after{
     content: "";
@@ -43,7 +43,7 @@ border:unset !important;
 .InnerSelected{
     color:rgba(19, 22, 25, 1) !important;
     background-color:rgba(225, 154, 76, 1);
-    border:unset;
+    border:unset !important;
 }
 .CircleSelected{
     border:1px solid rgba(225, 154, 76, 1);
@@ -76,5 +76,5 @@ border:1px solid rgba(160, 160, 164, 1);    display: flex;
 }
 .TextSelected{
     font-weight: 500;
-    color:rgba(199, 141, 78, 1);
+    color:rgba(199, 141, 78, 1) !important;
 }
