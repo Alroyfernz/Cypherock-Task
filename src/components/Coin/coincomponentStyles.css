@@ -85,7 +85,7 @@ justify-content:space-between;
 .css-hxtskf{
     border: unset;
    max-width: 65% !important;
-
+margin: auto !important;
     padding:4rem !important;
    
     background-color:
@@ -110,7 +110,7 @@ justify-content:space-between;
     position:absolute;
     right:0%;
     font-size: 24px;
-
+cursor: pointer;
 
     top:0%;
 }

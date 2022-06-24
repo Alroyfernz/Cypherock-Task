@@ -16,7 +16,11 @@ import {
 } from '@chakra-ui/react'
 import ModalNav from '../ModalNav/ModalNav'
 import Instruction from '../InstructionComponenet/Instruction'
+import CodeComp from '../CodeComponent/CodeComp'
+const InstructionArray = [{
+    title: "Select the Wallet On device", isDone: true,
 
+}, { title: "Select the Coin on device", isDone: true }, { title: "Tap 1 card of any 4 Cards", isDone: true }]
 const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -29,12 +33,14 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
 
                     <ModalBody>
                         <div className="ModalWrapper">
-                            <CgClose className="ModalCloseIcon" />
+                            <CgClose className="ModalCloseIcon" onClick={onClose} />
                             <h1 className="ModalText">
                                 Receive
                             </h1>
                             <ModalNav />
-                            <Instruction />
+                            <CodeComp />
+
+                            <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={InstructionArray} />
                         </div>
 
                     </ModalBody>

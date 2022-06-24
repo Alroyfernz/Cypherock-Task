@@ -8,7 +8,7 @@
 }
 .InstructionTitle{
 color:rgba(177, 177, 177, 1);
-font-size: 14px;
+font-size: 15px;
 }
 
 .InstructionSubContainer{
@@ -45,7 +45,8 @@ align-items: center;
     margin-right: 20px;
 }
 .DoneIcon{
-    color:rgba(158, 158, 158, 1)
+    color:rgba(158, 158, 158, 1);
+    font-size: 20px;
 }.SubInsText{
     color:rgba(164, 169, 214, 1);
     font-size: 16px;

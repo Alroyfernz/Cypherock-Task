@@ -20,6 +20,16 @@ align-items:center;
 justify-content: center;
 flex-direction:column;
 }
+.processDone{
+background:#E0B36A;
+border:unset !important;
+}
+.ProcessIcon{
+    color:#694D2E;
+}
+.processDoneText{
+    color:#E0B36A;
+}
 .Box:nth-child(1)::after,.Box:nth-child(2)::after{
     content: "";
     background-color: #707070;
