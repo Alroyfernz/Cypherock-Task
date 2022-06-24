@@ -20,9 +20,12 @@ const SideBar: React.FC = () => {
 
                             </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4}>
+                        <AccordionPanel pb={2}>
 
+                            <div className="WalletBox">
+                                <h3 className="WalletTitle">Portfolio 1</h3>
 
+                            </div>
                         </AccordionPanel>
                     </AccordionItem>
 
@@ -35,7 +38,7 @@ const SideBar: React.FC = () => {
 
                             </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4}>
+                        <AccordionPanel pb={2}>
 
                             <div className="WalletBox">
                                 <h3 className="WalletTitle">wallet 1</h3>
@@ -54,9 +57,12 @@ const SideBar: React.FC = () => {
 
                             </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4}>
+                        <AccordionPanel pb={2}>
 
+                            <div className="WalletBox">
+                                <h3 className="WalletTitle"> Transaction 1</h3>
 
+                            </div>
                         </AccordionPanel>
                     </AccordionItem>
                     <AccordionItem>
@@ -68,9 +74,12 @@ const SideBar: React.FC = () => {
 
                             </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4}>
+                        <AccordionPanel pb={2}>
 
-                            wallet 1
+                            <div className="WalletBox">
+                                <h3 className="WalletTitle"> Tutorial 1</h3>
+
+                            </div>
                         </AccordionPanel>
                     </AccordionItem>
                     <AccordionItem>
@@ -82,9 +91,12 @@ const SideBar: React.FC = () => {
 
                             </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4}>
+                        <AccordionPanel pb={2}>
 
-                            wallet 1
+                            <div className="WalletBox">
+                                <h3 className="WalletTitle"> Setting 1</h3>
+
+                            </div>
                         </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
