@@ -39,7 +39,7 @@ const CoinContainer: React.FC<Coin> = ({ CoinName, CoinAmt, CoinValue, CoinIcon 
                                 Receive
                             </h1>
                             <ModalNav section={section} setSection={setSection} />
-                            <div style={{ minHeight: '50vh', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                            <div className="SectionContainer">
                                 {section == 'Device' && <>
                                     <Instruction InstructionTitle="Follow the instruction on device" InstructionArray={FirstSectionInstructionArray} />
 
